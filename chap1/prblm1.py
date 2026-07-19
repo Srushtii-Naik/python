@@ -1,0 +1,21 @@
+print ('''
+[Verse 1]
+All smiles, I know what it takes to fool this town
+I'll do it 'til the sun goes down and all through the night time
+Oh, yeah
+Oh, yeah, I'll tell you what you wanna hear
+Keep my sunglasses on while I shed a tear
+It's never the right time, yeah-yeah
+
+[Pre-Chorus]
+I put my armour on, show you how strong I am
+I put my armour on, I'll show you that I am
+
+[Chorus]
+I'm unstoppable, I'm a Porsche with no brakes
+I'm invincible, yeah, I win every single game
+I'm so powerful, I don't need batteries to play
+I'm so confident, yeah, I'm unstoppable today
+Unstoppable today, unstoppable today
+Unstoppable today, I'm unstoppable today
+''')
