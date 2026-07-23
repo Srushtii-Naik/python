@@ -1,57 +1,57 @@
-# "https://github.com/narayan09/Python-Interview-Questions/tree/main"
+"https://github.com/narayan09/Python-Interview-Questions/tree/main"
 
-# # #Problem 1: Remove duplicates from a list while preserving order
-# # def no_dupli(lst):
-# #     seen = set()
-# #     res = []
+#Problem 1: Remove duplicates from a list while preserving order
+def no_dupli(lst):
+    seen = set()
+    res = []
 
-# #     for num in lst:
-# #         if num not in seen:
-# #             res.append(num)
-# #             seen.add(num)
+    for num in lst:
+        if num not in seen:
+            res.append(num)
+            seen.add(num)
 
-# #     return res
+    return res
 
-# # lst = [1,2,2,2,3,3,4,4,5,5]
-# # res = no_dupli(lst)
-# # print(res)
+lst = [1,2,2,2,3,3,4,4,5,5]
+res = no_dupli(lst)
+print(res)
 
-# # #What if we have nested lists (unhashable types)?
-# # def no_dupli(lst):
-# #     res = []
-# #     for num in lst:
-# #         if num not in res:
-# #             res.append(num)
-# #     return res
-# # lst = [1,2,2,2,3,3,4,4,5,5]
-# # res = no_dupli(lst)
-# # print(res)
+#What if we have nested lists (unhashable types)?
+def no_dupli(lst):
+    res = []
+    for num in lst:
+        if num not in res:
+            res.append(num)
+    return res
+lst = [1,2,2,2,3,3,4,4,5,5]
+res = no_dupli(lst)
+print(res)
 
-# # # Remove duplicates from a string
-# # def no_dupli(string):
-# #     res = []
-# #     for ch in string:
-# #         if ch not in res:
-# #             res.append(ch)
-# #     return ''.join(res)
-# # string = (input("enter string : "))
-# # res = no_dupli(string)
-# # print(res)
+# Remove duplicates from a string
+def no_dupli(string):
+    res = []
+    for ch in string:
+        if ch not in res:
+            res.append(ch)
+    return ''.join(res)
+string = (input("enter string : "))
+res = no_dupli(string)
+print(res)
 
-# #Remove duplicates but count occurrences
-# def no_dupli(string):
-#     res = []
-#     count = {}
-#     for ch in string:
-#         if ch not in res:
-#             res.append(ch)
-#             count[ch] = count.get(ch, 0)+1
-# string = (input("enter string : "))
-# res = no_dupli(string)
+#Remove duplicates but count occurrences
+def no_dupli(string):
+    res = []
+    count = {}
+    for ch in string:
+        if ch not in res:
+            res.append(ch)
+            count[ch] = count.get(ch, 0)+1
+string = (input("enter string : "))
+res = no_dupli(string)
 
-# count = no_dupli(string)
-# print(res)
-# print("Occurrences:", count)
+count = no_dupli(string)
+print(res)
+print("Occurrences:", count)
 
 # "-------------------------------------------------"
 # Problem 2: Find the second largest element
