@@ -8,3 +8,13 @@ print("Srushti")
 
 print("Hello!",end="---")   # Ends with custom string
 print("Srushti")
+
+
+
+
+
+print("A", end="")    # No newline
+print("B")            # Output: AB
+
+print("A", end="***") # Custom ending
+print("B")            # Output: A***B

@@ -19,3 +19,11 @@ def remove_strip(lst,word):
     return [item.strip() for item in lst if item != word]
 lst = [" Srushti"," Sanjana "," Sandesh "]
 print(remove_strip(lst,"San"))
+
+
+
+
+
+# strip() removes whitespace from both ends
+"  Hello  ".strip()  # "Hello"
+"  Srushti  ".strip()  # "Srushti"
