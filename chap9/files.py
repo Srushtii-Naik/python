@@ -34,7 +34,7 @@ f = open("filename","wt")   #write text
 
 # read()        Reads the entire file
 file = open("file.txt","r") #if no r , by default is read
-content = file.read()
+content = file.read()   # Gets everything as string
 print(content)
 file.close()
 
@@ -55,6 +55,11 @@ file = open("file.txt","r")
 print(file.readlines())
 file.close()
 
+#read line by line
+with open("p1.txt","r") as f:
+    for line in f:
+        print(line)      # Each line one by one
+
 # _________________________________________________________________________________________________________________________________________________________________________________
 
 'Writing to a file'
@@ -65,7 +70,7 @@ file =open("p1.txt","w")       #Existing content is deleted.
 file.write("Python")
 file.close()
 
-#_____________________________________________________________________________________________________________________________________
+
 
 'Appending to a File-----------------a mode adds data at the end.'
 file = open("p1.txt","a")
