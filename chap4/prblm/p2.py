@@ -24,3 +24,4 @@ print("marks in sorted: ",marks)
 
 #sorting opt 2:
 print("sorted: ",sorted(marks))
+
