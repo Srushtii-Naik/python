@@ -1,83 +1,83 @@
-# # #string methods
+#string methods
 
-# # a = "Srushti naik"
-# # print(a)
-# # print(a.upper())            #Upper letters
-# # print(a.lower())            #lower letters
-# # print(a.startswith("Sr"))    #check starts with Sr
-# # print(a.endswith("ti"))     #check ends with ti
-# # print(a.capitalize())         #capaitalize only 1st word not all even after space 
-# # print(a.title())              #capaitalize each word  all even after space 
-# # print(a.count("i"))         #counts occurences  
-# # print(a.find("u"))          #Returns index of substring
-
-
-# # b = " Srushti , Naik"
-# # print(b)
-# # print(b.strip())              #removes Spaces
-# # print(b.replace("s","h"))       #Replaces text
-# # print(b.split(","))         #Splits into a list
+a = "Srushti naik"
+print(a)
+print(a.upper())            #Upper letters
+print(a.lower())            #lower letters
+print(a.startswith("Sr"))    #check starts with Sr
+print(a.endswith("ti"))     #check ends with ti
+print(a.capitalize())         #capaitalize only 1st word not all even after space 
+print(a.title())              #capaitalize each word  all even after space 
+print(a.count("i"))         #counts occurences  
+print(a.find("u"))          #Returns index of substring
 
 
+b = " Srushti , Naik"
+print(b)
+print(b.strip())              #removes Spaces
+print(b.replace("s","h"))       #Replaces text
+print(b.split(","))         #Splits into a list
 
 
-# # ___________________________________________________________________________________________________________________________________________________________________________________
-
-# #capitalize(): Converts the first character of the string to capital letter
-# challenge = 'my name is Srushti'
-# print(challenge.capitalize())
-
-# #count(): returns occurrences of substring in string
-# challenge = 'my name is Srushti im learning python'
-# print(challenge.count('i'))
-# print(challenge.count('i',7,18))
-# print(challenge.count('is',7,18))
-
-# #endswith(): Checks if a string ends with a specified ending
-# challenge = 'my name is Srushti im learning python'
-# print(challenge.endswith('on'))     
-
-# #expandtabs(): Replaces tab character with spaces
-# challenge = 'my name is Srushti\t im learning python'
-# print(challenge.expandtabs())
-# print(challenge.expandtabs(10))
-
-# #find(): Returns the index of the first occurrence of a substring, if not found returns -1
-# challenge = 'my name is Srushti im learning python'
-# print(challenge.find('i'))
-# print(challenge.find('is')) #1st index
-
-# #rfind(): Returns the index of the last occurrence of a substring, if not found returns -1
-# challenge = 'my name is Srushti im learning python'
-# print(challenge.rfind('i'))
-# print(challenge.rfind('is'))
-
-# #format(): formats string into a nicer output
-# first_name = 'Srushti'
-# last_name = 'Naik'
-# age = 20
-# branch = 'CSE'
-# sentence = 'I am {} {}. I am {} year old. I am {} student.'.format(first_name,last_name,age,branch)
-# print(sentence)
-
-# #index(): Returns the lowest index of a substring, additional arguments indicate starting and ending index (default 0 and string length - 1). If the substring is not found it raises a valueError.
-# challenge = 'my name is Srushti im learning python'
-# sub_string = 'Sru'
-# print(challenge.index(sub_string))
-# print(challenge.index(sub_string,9)) #sub_string = 'San'---->valueError
-
-# #rindex(): Returns the highest index of a substring, additional arguments indicate starting and ending index (default 0 and string length - 1)
-# challenge = 'my name is Srushti im learning python'
-# sub_string = 'Sru'
-# print(challenge.rindex(sub_string))
-# print(challenge.rindex(sub_string,9)) #sub_string = 'San'---->valueError
 
 
-# #isalnum(): Checks alphanumeric character
-# challenge = 'my name is Srushti im learning python'
-# print(challenge.isalnum())  #False, space is not an alphanumeric character
-# challenge1 = 'Srushti2006'
-# print(challenge1.isalnum()) #True
+# ___________________________________________________________________________________________________________________________________________________________________________________
+
+#capitalize(): Converts the first character of the string to capital letter
+challenge = 'my name is Srushti'
+print(challenge.capitalize())
+
+#count(): returns occurrences of substring in string
+challenge = 'my name is Srushti im learning python'
+print(challenge.count('i'))
+print(challenge.count('i',7,18))
+print(challenge.count('is',7,18))
+
+#endswith(): Checks if a string ends with a specified ending
+challenge = 'my name is Srushti im learning python'
+print(challenge.endswith('on'))     
+
+#expandtabs(): Replaces tab character with spaces
+challenge = 'my name is Srushti\t im learning python'
+print(challenge.expandtabs())
+print(challenge.expandtabs(10))
+
+#find(): Returns the index of the first occurrence of a substring, if not found returns -1
+challenge = 'my name is Srushti im learning python'
+print(challenge.find('i'))
+print(challenge.find('is')) #1st index
+
+#rfind(): Returns the index of the last occurrence of a substring, if not found returns -1
+challenge = 'my name is Srushti im learning python'
+print(challenge.rfind('i'))
+print(challenge.rfind('is'))
+
+#format(): formats string into a nicer output
+first_name = 'Srushti'
+last_name = 'Naik'
+age = 20
+branch = 'CSE'
+sentence = 'I am {} {}. I am {} year old. I am {} student.'.format(first_name,last_name,age,branch)
+print(sentence)
+
+#index(): Returns the lowest index of a substring, additional arguments indicate starting and ending index (default 0 and string length - 1). If the substring is not found it raises a valueError.
+challenge = 'my name is Srushti im learning python'
+sub_string = 'Sru'
+print(challenge.index(sub_string))
+print(challenge.index(sub_string,9)) #sub_string = 'San'---->valueError
+
+#rindex(): Returns the highest index of a substring, additional arguments indicate starting and ending index (default 0 and string length - 1)
+challenge = 'my name is Srushti im learning python'
+sub_string = 'Sru'
+print(challenge.rindex(sub_string))
+print(challenge.rindex(sub_string,9)) #sub_string = 'San'---->valueError
+
+
+#isalnum(): Checks alphanumeric character
+challenge = 'my name is Srushti im learning python'
+print(challenge.isalnum())  #False, space is not an alphanumeric character
+challenge1 = 'Srushti2006'
+print(challenge1.isalnum()) #True
 
 '''
     isalpha(): Checks if all string elements are alphabet characters (a-z and A-Z)
