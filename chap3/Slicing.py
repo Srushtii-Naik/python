@@ -11,3 +11,7 @@ print(a[-4:-1]) # frm index 8 to 11 (reverse)
 
 #jumping string
 print(a[0:11:3]) #jumps 3 index
+
+#Reversing a String
+greeting = 'Srushti'
+print(greeting[::-1])
