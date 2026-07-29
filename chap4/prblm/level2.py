@@ -1,37 +1,37 @@
-# ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 
-# #Sort the list and find the min and max age
-# ages.sort()
-# print(ages)
-# print(max(ages))
-# print(min(ages))
+#Sort the list and find the min and max age
+ages.sort()
+print(ages)
+print(max(ages))
+print(min(ages))
 
-# #Add the min age and the max age again to the list
-# ages.append(max(ages))
-# ages.append(min(ages))
-# print(ages)
+#Add the min age and the max age again to the list
+ages.append(max(ages))
+ages.append(min(ages))
+print(ages)
 
-# #Find the median age (one middle item or two middle items divided by two)
-# mid = len(ages)//2
-# if len(ages)%2 != 0:
-#     median = (ages[mid])
-# else:
-#     median = (ages[mid])
-#     median = (ages[mid-1])
-# print(median)
+#Find the median age (one middle item or two middle items divided by two)
+mid = len(ages)//2
+if len(ages)%2 != 0:
+    median = (ages[mid])
+else:
+    median = (ages[mid])
+    median = (ages[mid-1])
+print(median)
 
-# #Find the average age (sum of all items divided by their number )
-# average = sum(ages) / len(ages)
-# print(average)
+#Find the average age (sum of all items divided by their number )
+average = sum(ages) / len(ages)
+print(average)
 
-# #Find the range of the ages (max minus min)
-# range = max(ages) - min(ages)
-# print(range)
+#Find the range of the ages (max minus min)
+range = max(ages) - min(ages)
+print(range)
 
-# #Compare the value of (min - average) and (max - average), use abs() method
-# diff_max = abs(min(ages) - average)
-# diff_min = abs(max(ages) - average)
-# print(diff_max,diff_min)
+#Compare the value of (min - average) and (max - average), use abs() method
+diff_max = abs(min(ages) - average)
+diff_min = abs(max(ages) - average)
+print(diff_max,diff_min)
 
 
 
