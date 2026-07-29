@@ -1,62 +1,62 @@
-# #Creating an empty set
-# s = set()      #Empty curly brackets {} will create a dictionary
+#Creating an empty set
+s = set()      #Empty curly brackets {} will create a dictionary
 
-# #Creating a set with initial items
-# fruits = {'banana', 'orange', 'mango', 'lemon'}
+#Creating a set with initial items
+fruits = {'banana', 'orange', 'mango', 'lemon'}
 
-# #We use len() method to find the length of a set.
-# print(len(fruits))
+#We use len() method to find the length of a set.
+print(len(fruits))
 
-# #Accessing Items in a Set: We use loops to access items
+#Accessing Items in a Set: We use loops to access items
 
-# #To check if an item exist in a list we use in membership operator.
-# fruits = {'banana', 'orange', 'mango', 'lemon'}
-# print('orange' in fruits)
+#To check if an item exist in a list we use in membership operator.
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+print('orange' in fruits)
 
-# #Add one item using add()
-# fruits = {'banana', 'orange', 'mango', 'lemon'}
-# fruits.add('lime')
-# print(fruits)
+#Add one item using add()
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+fruits.add('lime')
+print(fruits)
 
-# #Add multiple items using update() The update() allows to add multiple items to a set. The update() takes a list argument.
-# fruits = {'banana', 'orange', 'mango', 'lemon'}
-# fruits.update(['apple','kiwi','watermelon'])
-# print(fruits)
+#Add multiple items using update() The update() allows to add multiple items to a set. The update() takes a list argument.
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+fruits.update(['apple','kiwi','watermelon'])
+print(fruits)
 
-# fruits = {'banana', 'orange', 'mango', 'lemon'}
-# vegetables = ('tomato', 'potato', 'cabbage','onion', 'carrot')
-# fruits.update(vegetables)
-# print(fruits)
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+vegetables = ('tomato', 'potato', 'cabbage','onion', 'carrot')
+fruits.update(vegetables)
+print(fruits)
 
-# #The pop() methods remove a random item from a list and it returns the removed item.
-# fruits = {'banana', 'orange', 'mango', 'lemon'}
-# fruits.pop()    # removes a random item from the set
+#The pop() methods remove a random item from a list and it returns the removed item.
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+fruits.pop()    # removes a random item from the set
 
-# #If we want to clear or empty the set we use clear method.
-# fruits.clear()
-# print(fruits)
+#If we want to clear or empty the set we use clear method.
+fruits.clear()
+print(fruits)
 
-# #f we want to delete the set itself we use del operator.
-# del s
-# del fruits
+#f we want to delete the set itself we use del operator.
+del s
+del fruits
 
-# #We can convert list to set and set to list. Converting list to set removes duplicates and only unique items will be reserved.
-# fruits = ['banana', 'orange', 'mango', 'lemon','orange', 'banana']
-# fruits = set(fruits)
-# print(fruits)
+#We can convert list to set and set to list. Converting list to set removes duplicates and only unique items will be reserved.
+fruits = ['banana', 'orange', 'mango', 'lemon','orange', 'banana']
+fruits = set(fruits)
+print(fruits)
 
-# #We can join two sets using the union() or update() method or | symbol 
-# #Union This method returns a new set
-# fruits = {'banana', 'orange', 'mango', 'lemon'}
-# vegetables = {'tomato', 'potato', 'cabbage','onion', 'carrot'}
-# print(fruits.union(vegetables))
-# print(fruits | vegetables)
+#We can join two sets using the union() or update() method or | symbol 
+#Union This method returns a new set
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+vegetables = {'tomato', 'potato', 'cabbage','onion', 'carrot'}
+print(fruits.union(vegetables))
+print(fruits | vegetables)
 
-# #Update This method inserts a set into a given set
-# fruits = {'banana', 'orange', 'mango', 'lemon'}
-# vegetables = {'tomato', 'potato', 'cabbage','onion', 'carrot'}
-# fruits.update(vegetables)
-# print(fruits)
+#Update This method inserts a set into a given set
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+vegetables = {'tomato', 'potato', 'cabbage','onion', 'carrot'}
+fruits.update(vegetables)
+print(fruits)
 
 #Intersection returns a set of items which are in both the sets or using & symbol. See the example
 whole_numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
