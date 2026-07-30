@@ -28,3 +28,40 @@ elif a < b:
     print("a is smaller than b,")
 else:
     print("a is equal to b")
+
+
+#Write a code which gives grade to students according to theirs scores:
+score = int(input("Enter a score: "))
+if score >= 90:
+    print("A")
+elif score >=80:
+    print("B")
+elif score >=70:
+    print("B")
+elif score >=60:
+    print("B")
+else:
+    print("F")
+
+#Get the month from user input then check if the season is Autumn, Winter, Spring or Summer. If the user input is: September, October or November, the season is Autumn. December, January or February, the season is Winter. March, April or May, the season is Spring June, July or August, the season is Summer
+month = input("ENter month: ").capitalize()
+if month in ["September","October","November"]:
+    print("Season is Autumn")
+elif month in ["December","January","February"]:
+    print("Season is Winter")
+elif month in ["March","April","May"]:
+    print("Season is spring")
+elif month in ["June","July","August"]:
+    print("Season is Summer")
+else:
+    print("Invalid month entered")
+
+#The following list contains some fruits . If a fruit doesn't exist in the list add the fruit to the list and print the modified list. If the fruit exists print('That fruit already exist in the list')
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruit = input("Enter a fruit: ").lower()
+
+if fruit in fruits:
+    print("That fruit already exists in the list")
+else:
+    fruits.append(fruit)
+    print("Updated list:", fruits)
