@@ -10,25 +10,25 @@ me = {
     'skills':["HTML","CSS","Python","github"],
     'address': {'country': 'india', "city":" bnglr", "pincode":560021}
 }
-# print(me)
+print(me)
 
-# #Dictionary Length: It checks the number of 'key: value' pairs in the dictionary.
-# print(len(me))
+#Dictionary Length: It checks the number of 'key: value' pairs in the dictionary.
+print(len(me))
 
-# #We can access Dictionary items by referring to its key name.
-# print(me['name'])
-# print(me['CGPA'])
-# print(me.get('Clg'))
-# print(me.get('city'))   #instead of Error get-->None
+#We can access Dictionary items by referring to its key name.
+print(me['name'])
+print(me['CGPA'])
+print(me.get('Clg'))
+print(me.get('city'))   #instead of Error get-->None
 
-# #We can add new key and value pairs to a dictionary
-# me['job'] = "Student"
-# me['skills'].append('leetcode')
-# print(me)
+#We can add new key and value pairs to a dictionary
+me['job'] = "Student"
+me['skills'].append('leetcode')
+print(me)
 
-# #We can modify items in a dictionary
-# me['name'] = "Srushti Naik"
-# print(me)
+#We can modify items in a dictionary
+me['name'] = "Srushti Naik"
+print(me)
 
 #We use the in operator to check if a key exist in a dictionary
 print('name' in me)
