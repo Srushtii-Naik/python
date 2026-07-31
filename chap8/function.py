@@ -87,3 +87,31 @@ show()
 'Lambda(Anonymous) function --------small fun written in 1 line'
 square = lambda x: x*x
 print(square(5)) 
+
+
+
+# ___________________________________________________________________________________________________________________________________________________________________________________
+
+#Dictionary unpacking (using **)
+def greet(name,loction):
+    print("hi there ", name, "how is weather in ",loction)
+greet(name='Srushti', loction='Banglore')
+
+my_dict = {"name":'Srushti',"loction":"Banglore"}
+greet(**my_dict)
+
+#Arbitrary Number of Named Arguments
+def arbitrary_named_args(**args):
+    print("I received an arbitrary number of arguments, totaling", len(args))
+    print("They are provided as a dictionary in my function:", type(args))
+    print("Let's print them:")
+    for k, v in args.items():
+        print(" * key:", k, "value:", v)
+arbitrary_named_args()
+
+#Function as a Parameter of Another Function
+def square(n):
+    return n **n
+def something(f,x):
+    return f(x)
+print(something(square,3))
