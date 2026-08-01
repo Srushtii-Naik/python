@@ -31,15 +31,53 @@
 
 
 
-#Write a function list_of_hexa_colors which returns any number of hexadecimal colors in an array (six hexadecimal numbers written after #. Hexadecimal numeral system is made out of 16 symbols, 0-9 and first 6 letters of the alphabet, a-f. Check the task 6 for output examples).
+# #Write a function list_of_hexa_colors which returns any number of hexadecimal colors in an array (six hexadecimal numbers written after #. Hexadecimal numeral system is made out of 16 symbols, 0-9 and first 6 letters of the alphabet, a-f. Check the task 6 for output examples).
+# import random
+# def list_of_hexa_colors(n):
+#     colors = []
+#     for _ in range(n):
+#         color = "#" + ''.join(random.choice("0123456789adcdef") for _ in range(6))
+#         colors.append(color)
+#     return colors
+# print(list_of_hexa_colors(3))
+
+
+# #Write a function list_of_rgb_colors which returns any number of RGB colors in an array.
+# def list_rgb_colors(n):
+#     colors = []
+#     for _ in range(n):
+#         r = random.randint(0,255)
+#         g = random.randint(0,255)
+#         b = random.randint(0,255)
+#         colors.append(f"rgb ({r}, {g}, {b})")
+#     return colors
+# print(list_rgb_colors(3))
+
+
+# #Write a function generate_colors which can generate any number of hexa or rgb colors
+# import random
+# def generate_colors(color_type,n):
+#     if color_type == 'hexa':
+#         return list_of_hexa_colors(n)
+#     elif color_type == 'rgb':
+#         return list_rgb_colors
+#     else:
+#         return ["invalid color"]
+# print(generate_colors('hexa', 3))
+# print(generate_colors('rgb', 3))
+
+# ___________________________________________________________________________________________________________________________________________________________________________________
+
+
+#Call your function shuffle_list, it takes a list as a parameter and it returns a shuffled list
 import random
-def list_of_hexa_colors(n):
-    colors = []
-    for _ in range(n):
-        color = "#" + ''.join(random.choice("0123456789adcdef") for _ in range(6))
-        colors.append(color)
-    return colors
-print(list_of_hexa_colors(3))
+def shuffle_list(lst):
+    random.shuffle(lst)
+    return lst
+print(shuffle_list([1,2,3,4,5]))
 
-
-#Write a function list_of_rgb_colors which returns any number of RGB colors in an array.
+#Write a function which returns an array of seven random numbers in a range of 0-9. All the numbers must be unique.
+import random
+def unique_random_num():
+    return random.sample(range(10),7)
+print(unique_random_num())
